@@ -195,12 +195,12 @@
   // Initialize a cognito auth object.
   function initCognitoSDK() {
     var authData = {
-      ClientId: 'lg4mq61nfaolp0t0ol5qhbdjk', // Your client id here
-      AppWebDomain: 'test-jun.auth.us-east-1.amazoncognito.com', // Exclude the "https://" part.
-      TokenScopesArray: ['email', 'openid', 'profile'], // like ['openid','email','phone']...
-      RedirectUriSignIn: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/auth-data-provided/sample/index.html',
-      RedirectUriSignOut: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/auth-data-provided/sample/index.html',
-      UserPoolId: 'us-east-1_KIKJIl0sy',
+      ClientId: '220sg2f3qdb3blmcrrv79dmdpo', // Your client id here
+      AppWebDomain: 'test-social.auth.us-east-1.amazoncognito.com', // Exclude the "https://" part.
+      TokenScopesArray: ['openid', 'profile'], // like ['openid','email','phone']...
+      RedirectUriSignIn: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/social-login/sample/index.html',
+      RedirectUriSignOut: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/social-login/sample/index.html',
+      UserPoolId: 'us-east-1_tLow4LaGF',
       IdentityProvider: 'Facebook',
       AdvancedSecurityDataCollectionFlag: true
     };
