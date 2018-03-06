@@ -197,10 +197,11 @@
     var authData = {
       ClientId: 'lg4mq61nfaolp0t0ol5qhbdjk', // Your client id here
       AppWebDomain: 'test-jun.auth.us-east-1.amazoncognito.com', // Exclude the "https://" part.
-      TokenScopesArray: ['openid'], // like ['openid','email','phone']...
+      TokenScopesArray: ['email', 'openid', 'profile'], // like ['openid','email','phone']...
       RedirectUriSignIn: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/auth-data-provided/sample/index.html',
       RedirectUriSignOut: 'https://rawgit.com/Jun711/amazon-cognito-auth-js/auth-data-provided/sample/index.html',
       UserPoolId: 'us-east-1_KIKJIl0sy',
+      IdentityProvider: 'Facebook',
       AdvancedSecurityDataCollectionFlag: true
     };
     var auth = new AWSCognito.CognitoIdentityServiceProvider.CognitoAuth(authData);
